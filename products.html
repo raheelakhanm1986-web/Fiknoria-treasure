@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Products | Fiknoria Treasure</title>
+  <meta name="description" content="Browse original educational ebooks, colouring books and preschool worksheets from Fiknoria Treasure.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="Fiknoria Treasure logo"><span>Fiknoria <em>Treasure</em></span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+    <h1>Digital <em>Products</em></h1>
+    <p>Download, print and play. Original resources designed for curious little learners.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter buttons (js/main.js inhein chalata hai) -->
+    <div class="filters" data-target=".product">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ebooks">Ebooks</button>
+      <button class="filter-btn" data-filter="colouring">Colouring Books</button>
+      <button class="filter-btn" data-filter="worksheets">Worksheets</button>
+      <button class="filter-btn" data-filter="soon">Arabic & Urdu</button>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- ===== PRODUCT CARD =====
+           Naya product add karna ho to ek card copy karein.
+           data-cat = ebooks / colouring / worksheets / soon
+           Image: images/product-1.jpg (naam change kar sakte hain)
+           Price: "Instant Download" ki jagah apni price likhein, e.g. "Rs. 500" -->
+      <article class="product" data-cat="ebooks">
+        <div class="img-slot"><span class="slot-label">📷 images/product-1.jpg</span><img src="images/product-1.jpg" alt="My Animal Families ebook cover" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag">Ebook</span>
+          <h3>My Animal Families</h3>
+          <p>Babies, homes & foods: a matching activity book for ages 2–5.</p>
+          <div class="product-foot">
+            <span class="price">Instant Download</span>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/923453793158?text=Hello!%20I%20want%20to%20order%20My%20Animal%20Families" target="_blank" rel="noopener">Order</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-cat="ebooks">
+        <div class="img-slot"><span class="slot-label">📷 images/product-2.jpg</span><img src="images/product-2.jpg" alt="My Little Feelings ebook cover" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag">Ebook</span>
+          <h3>My Little Feelings</h3>
+          <p>A gentle emotions book for Muslim toddlers: happy, sad, crying, smiling and more.</p>
+          <div class="product-foot">
+            <span class="price">Instant Download</span>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/923453793158?text=Hello!%20I%20want%20to%20order%20My%20Little%20Feelings" target="_blank" rel="noopener">Order</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-cat="colouring">
+        <div class="img-slot"><span class="slot-label">📷 images/product-3.jpg</span><img src="images/product-3.jpg" alt="Farm animals colouring book cover" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag">Colouring Book</span>
+          <h3>My First Farm Animals Colouring Book</h3>
+          <p>25 print-ready A4 pages, one friendly animal per page, for ages 3–5.</p>
+          <div class="product-foot">
+            <span class="price">Instant Download</span>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/923453793158?text=Hello!%20I%20want%20to%20order%20My%20First%20Farm%20Animals%20Colouring%20Book" target="_blank" rel="noopener">Order</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-cat="worksheets">
+        <div class="img-slot"><span class="slot-label">📷 images/product-4.jpg</span><img src="images/product-4.jpg" alt="Preschool worksheets preview" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag">Worksheets</span>
+          <h3>Preschool Worksheets Pack</h3>
+          <p>Matching, tracing and counting printables for early learners. (Edit this title/description)</p>
+          <div class="product-foot">
+            <span class="price">Instant Download</span>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/923453793158?text=Hello!%20I%20want%20to%20order%20the%20Preschool%20Worksheets%20Pack" target="_blank" rel="noopener">Order</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-cat="soon">
+        <div class="img-slot"><span class="slot-label">📷 images/product-5.jpg</span><img src="images/product-5.jpg" alt="Arabic body parts picture book" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag soon">Coming Soon</span>
+          <h3>My Body Parts (Arabic / English)</h3>
+          <p>An Arabic-English picture book exploring 16 body parts, one per page.</p>
+          <div class="product-foot">
+            <span class="price">Soon</span>
+            <a class="btn btn-outline btn-sm" href="contact.html">Notify me</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-cat="soon">
+        <div class="img-slot"><span class="slot-label">📷 images/product-6.jpg</span><img src="images/product-6.jpg" alt="Urdu learning resources" onerror="this.remove()"></div>
+        <div class="product-body">
+          <span class="tag soon">Coming Soon</span>
+          <h3>Urdu Learning Resources</h3>
+          <p>Urdu alphabets, words and activities for little learners are on the way.</p>
+          <div class="product-foot">
+            <span class="price">Soon</span>
+            <a class="btn btn-outline btn-sm" href="contact.html">Notify me</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Need something custom?</h2>
+      <p>Tell us what your child or classroom needs and we'll be happy to help.</p>
+      <a href="contact.html" class="btn btn-white">Contact Us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="images/logo.svg" alt="Fiknoria Treasure logo"><span>Fiknoria <em>Treasure</em></span></a>
+        <p>A World of Little Discoveries. Original educational ebooks and printables for children.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html">Educational Ebooks</a></li>
+          <li><a href="products.html">Colouring Books</a></li>
+          <li><a href="products.html">Worksheets</a></li>
+          <li><a href="products.html">Arabic & Urdu (soon)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li>📞 <a href="tel:+923453793158">0345 3793158</a></li>
+          <li>✉️ <a href="mailto:raheelakhanm1986@gmail.com">raheelakhanm1986@gmail.com</a></li>
+          <li>📍 Online</li>
+          <li>🕒 Open 24 hours</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span class="year">2026</span> Fiknoria Treasure. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923453793158?text=Hello%20Fiknoria%20Treasure!%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.100-2.100c1.800 1 3.800 1.500 5.900 1.500 7 0 12.700-5.600 12.700-12.500S23 3 16 3zm0 22.800c-1.900 0-3.700-.5-5.300-1.500l-.4-.2-4.200 1.200 1.300-4-.3-.4c-1.100-1.700-1.700-3.600-1.700-5.600C5.400 9.800 10.100 5.200 16 5.200s10.600 4.600 10.600 10.300S21.800 25.800 16 25.800zm5.800-7.700c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100c-1.900-.9-3.100-1.700-4.300-3.800-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400s-1.200 1.200-1.200 2.800 1.200 3.300 1.400 3.500c.2.200 2.400 3.700 5.800 5.100 2.100.9 3 1 4 .8.600-.1 1.900-.8 2.200-1.500.3-.8.300-1.400.2-1.500s-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
